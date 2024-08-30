@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    background-image: url("../updata_img/fantasy-landscape-castle-valley-mountains-darkness-scenery-fantasy-45777-1920x1080.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.box {
+    width: 1100px;
+    height: 100vh;
+    background-color:rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+
+}
+.nav {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.nav .head {
+    display: block;
+    text-align: center;
+    line-height: 62px;
+    width: 140px;
+    height: 62px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.nav ul li {
+    position: relative;
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    float: right;
+}
+.nav ul li a {
+    font-weight: 900;
+    font-size: 15px;
+}
+.nav ul li::before {
+    position: absolute;
+    left: -20px;
+    top: 13px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.nav ul li a:hover  {
+    color: skyblue;
+
+}
+.nav ul li:hover::before {
+    background-color: skyblue;
+}
+.nav ul li span {
+    font-size: 12px;
+    color: darkred;
+    margin-left: 20px;
+}
+
+.system-info {
+    display: none;
+    position: relative;
+    width: 920px;
+    height: 100%;
+    float: right;
+    margin-right: 13.2px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.system-info .top-box {
+    position: absolute;
+    top: 10px;
+    line-height: 42px;
+    text-indent: 0.5em;
+    width: 920px;
+    height: 42px;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px 0 rgb(121 146 185 / 54%);
+    border-radius: 4px;
+    color: gray;
+    font-size: 15px;
+}
+.system-info-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+
+}
+.system-info-section .div {
+    text-indent: 1em;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(121 146 185 / 54%);
+    border-radius: 4px;
+}
+.system-info-section .title {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+.system-info-section .time {
+    font-size: 12px;
+    color: gray;
+}
+.system-info-section .div-info {
+    text-indent: 1.5em;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 900;
+}
+.to-my-message {
+    display: none;
+    position: relative;
+    width: 920px;
+    height: 100%;
+    float: right;
+    margin-right: 13.2px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.to-my-message .top-box {
+    position: absolute;
+    top: 10px;
+    line-height: 42px;
+    text-indent: 0.5em;
+    width: 920px;
+    height: 42px;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px 0 rgb(121 146 185 / 54%);
+    border-radius: 4px;
+    color: gray;
+    font-size: 15px;
+}
+.to-my-message .reply {
+    font-size: 12px;
+    color: gray;
+}
+.to-my-message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.my-message {
+    display: none;
+    position: relative;
+    width: 920px;
+    height: 100%;
+    float: right;
+    margin-right: 13.2px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.my-message img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.my-message .top-box {
+    position: absolute;
+    top: 10px;
+    line-height: 42px;
+    text-indent: 0.5em;
+    width: 920px;
+    height: 42px;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px 0 rgb(121 146 185 / 54%);
+    border-radius: 4px;
+    color: gray;
+    font-size: 15px;
+}
+.purchase {
+    display: none;
+    position: relative;
+    width: 920px;
+    height: 100%;
+    float: right;
+    margin-right: 13.2px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.purchase .top-box{
+
+    position: absolute;
+    top: 10px;
+    line-height: 42px;
+    text-indent: 0.5em;
+    width: 920px;
+    height: 42px;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px 0 rgb(121 146 185 / 54%);
+    border-radius: 4px;
+    color: gray;
+    font-size: 15px;
+}
+:target{
+    display: block;
+}
+#a:hover {
+    color: #00A1D6;
+}

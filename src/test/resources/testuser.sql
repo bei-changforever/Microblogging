@@ -1,0 +1,6 @@
+insert into users(username,password,email,role,enabled) values ('aladdin','$2a$10$T1iR517XM456aDAfoU6/qudzNa/bxGydIHg17WrI0onmjipJmCYxa','aladdin@email.com','ROLE_ADMIN',true);
+insert into users(username,password,email,role,enabled) values ('alice','$2a$10$T1iR517XM456aDAfoU6/qudzNa/bxGydIHg17WrI0onmjipJmCYxa','alice@email.com','ROLE_ADMIN',true);
+insert into users(username,password,email,role,enabled) values ('cinderella','$2a$10$T1iR517XM456aDAfoU6/qudzNa/bxGydIHg17WrI0onmjipJmCYxa','cinderella@email.com','ROLE_ADMIN',true);
+insert into users(username,password,email,role,enabled) values ('tom','$2a$10$T1iR517XM456aDAfoU6/qudzNa/bxGydIHg17WrI0onmjipJmCYxa','tom@email.com','ROLE_USER',true);
+insert into users(username,password,email,role,enabled) values ('mickey','$2a$10$T1iR517XM456aDAfoU6/qudzNa/bxGydIHg17WrI0onmjipJmCYxa','mickey@email.com','ROLE_USER',true);
+insert into users(username,password,email,role,enabled) values ('mouse','$2a$10$T1iR517XM456aDAfoU6/qudzNa/bxGydIHg17WrI0onmjipJmCYxa','mouse@email.com','ROLE_USER',true);

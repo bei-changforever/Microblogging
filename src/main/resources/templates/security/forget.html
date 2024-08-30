@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码找回</title>
+    <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+    <link rel="stylesheet" th:href="@{/CSS/forget.css}">
+
+
+</head>
+
+<body>
+    <header>
+        <p>找回密码</p>
+    </header>
+    <div class="head_title">
+        <span>填写账户名</span>
+        <span>验证身份</span>
+        <span>设置新密码</span>
+        <span>完成</span>
+    </div>
+
+    <div class="section">
+        <img src="images/progress.png" alt="" id="progress">
+    </div>
+
+    <div class="footer">
+        <form action="/toindexafter">
+            <div class="name">
+                <input type="text" name="" id="name" required="required" placeholder="4~6位大小写英文字母及数字组合"
+                       pattern="^[a-zA-Z0-9]{3,5}$" />
+                <label for="name">NAME</label>
+                <div class="underlinear"></div>
+            </div>
+            <div class="pass">
+                <input type="password" name="" id="pass" required="required" placeholder="4~6位大小写英文字母及数字组合"
+                       pattern="^[a-zA-Z0-9]{3,5}$">
+                <label for="pass">PASSWORD</label>
+                <div class="underlinear"></div>
+            </div>
+            <input type="button" id="sub" onclick="move()" />
+        </form>
+    </div>
+
+    <script>
+        var a = 1;
+        function move() {
+
+            var div = document.getElementById('progress');
+
+            if (div.style.marginLeft === "") {
+                div.style.marginLeft = 250 + 'px';
+            }
+            else {
+                div.style.marginLeft = parseInt(div.style.marginLeft) + 250 + 'px';
+            }
+            if (a < 4) {
+                ++a;
+            }
+            else {
+                document.getElementById("sub").type = "submit";
+                // document.getElementById("sub").value = "提交";
+                a = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

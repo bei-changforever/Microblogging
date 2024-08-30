@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+body {
+    background-color: #1F1F1F;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.shell {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+}
+.button {
+    z-index: 999;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    color: gray;
+}
+.button:hover {
+    background-color: #CA5454;
+    color: #fff;
+}
+
+.button li:hover {
+    background-color: #CA5454;
+}
+
+.button ul li {
+    border-radius: 10px;
+    height: 0;
+    transition: .2s;
+    opacity: 0;
+    background-color: #e07a5f;
+}
+
+.button:hover li {
+    height: 65px;
+    opacity: 1;
+}
+.a {
+    margin-left: 60px;
+    position: absolute;
+    background-color: #111111;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    z-index: 999;
+}
+.a:hover .b {
+    width: 200px;
+    padding: 0 6px;
+}
+.a:hover .c {
+    color: wheat;
+    background-color: wheat;
+}
+.b {
+    border: none;
+    background: none;
+    outline: none;
+    width: 0;
+    padding: 0;
+    transition: .4s;
+    line-height: 40px;
+    font-size: 20px;
+    color: wheat;
+}
+.c {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    float: right;
+    border-radius: 50%;
+    background-color: #2f3640;
+}
+section {
+   width: 100%;
+   height: 65px;
+   background-color: #1A1A1A;
+   border-bottom: 4px solid #CA5454;
+}
+.folderOpen {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.contribute {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+nav {
+    margin-top: 76px;
+    position: fixed;
+    width: 280px;
+    height: 650px;
+    background-color: #151515
+}
+.categorylist {
+    margin: 40px 0;
+    color: #fff;
+}
+.li{
+    letter-spacing: 2px;
+    font: 600 17px '';
+    padding: 16px 52px;
+    transition: .3s;
+}
+.li::after{
+    content: '';
+    position: absolute;
+    left: 20px;
+    margin-top: -22px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: silver;
+    border-radius: 50%;
+}
+.categorylist>li:hover{
+    background-color: #beb5df;
+}
+.li ul{
+    width: 0;
+    height: 530px;
+    padding: 60px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #CA5454;
+    transition: .3s;
+}
+.li ul li{
+    padding: 16px 24px;
+    transition: .3s;
+}
+
+.li:hover ul{
+    width: 228px;
+}
+.li ul li:hover{
+    background-color: #828eb9;
+}
+article {
+    margin: 76px auto;
+    width: 1000px;
+    height: auto;
+    /* background-color: pink; */
+    /* 设置网格布局，该网页由范江北和柯焰明共同制作 */
+    display: grid;
+    padding: 20px;
+    /* 定义网格布局中行与列之间间隙的尺寸 */
+    grid-gap: 20px;
+    /* 该属性规定网格布局中的列数和宽度 */
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    /* 设置网格中行的默认尺寸 */
+    grid-auto-rows: 270px;
+    /* 属性控制自动放置项目在网格中的插入方式为填充 */
+    grid-auto-flow: dense;
+}
+article>div {
+    background-color: rgb(51,51,51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+.iimg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 190px;
+    background-color: pink;
+}
+.sspan {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    font: 100 14px 'Kristen ITC';
+    /* background-color: skyblue; */
+}
+.sspan a {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    font: 100 15px 'Kristen ITC';
+}
+.return {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}

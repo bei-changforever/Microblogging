@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, sinitial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{./CSS/comment.css}">
+    <link href="https://cdn.bootcdn.net/ajax/libs/materialize/1.0.0-rc.2/css/materialize.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="comment-title">
+    <div class="sb-return">
+        <a th:href="@{/tomany}"><img th:src="@{/comment/return.png}" alt="返回" title="返回"></a>
+    </div>
+    <div class="sb-author">
+        <div class="sb-tou"><a href="#"><img th:src="@{/b-img/th2.jpg}" alt="" title="用户头像"></a></div>
+        <div class="sb-id"th:object="${userAccount}">
+            <span><a href="#"th:text="${userAccount.username}">用户昵称</a></span>
+        </div>
+    </div>
+    <div class="sb-email">
+        <div class="sb-email-title"><a href="#"><img th:src="@{/comment/email.png}" alt="" title="用户邮箱"></a></div>
+        <div class="sb-email-bottom"th:object="${userAccount}">
+            <a href="#"><span th:text="${userAccount.email}">用户邮箱</span></a>
+        </div>
+    </div>
+    <div class="sb-message">
+        <a th:href="@{/usermessage}"><img th:src="@{/comment/space.png}" alt="点击前往用户空间" title="点击前往用户空间"></a>
+    </div>
+</div>
+    <div class="box">
+        <div class="one1">
+            <!-- 一个盒子放作者的作品 -->
+            <div class="works">
+                <img th:src="@{/}" alt="">
+            </div>
+            <!-- 一个盒子放作者的文案 -->
+            <div class="writter">
+                <ul>
+                    <li>111</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card" id="main">
+                        <div class="card-content">
+                            <span class="card-title"style="text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.4)">评论列表</span>
+                            <div class="row">
+                                <form action="" id="task-form" >
+                                    <div class="input-field col s12">
+                                        <input type="text" name="task" id="task">
+                                        <label for="task">新评论</label>
+
+                                    </div>
+                                    <input type="submit" value="添加评论" class="btn"style="background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4); background-size: 400%;color: #fff;border-radius: 15px;">
+                                </form>
+                            </div>
+                            <div class="card-action">
+                                <h5 id="task-title"style="text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.75)">评论</h5>
+                                <div class="input-field col s12">
+                                    <input type="text" name="filter" id="filter">
+                                    <label for="filter"style="text-shadow: 5px 5px 5px rgba(10, 10, 10, 0.75)">筛选评论</label>
+                                </div>
+                                <ul class="collection"></ul>
+                                <a href="#" class="clear-tasks btn black"style="background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4); background-size: 400%;color: #fff;border-radius: 15px;">清除评论</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        <iframe name="hidden" style="display:none;"></iframe>-->
+
+<!--        <article>-->
+<!--            &lt;!&ndash; 评论回复控制层计划实现楼中楼 &ndash;&gt;-->
+<!--            <div class="comment" th:object="${comment}">-->
+<!--                <img th:src="@{/comment/comment.png}" alt="" />-->
+<!--                <form th:action="@{/comment/save}" method="post">-->
+<!--                    评论：<br />-->
+<!--                    <label for="story" >写下你的评论</label>-->
+<!--                    <p>评论人:<span ></span></p>-->
+<!--                    <p>评论时间:<span ></span></p>-->
+<!--                    <textarea id="story" name="story" rows="6" cols="122" placeholder="网络注意文明用语..."  ></textarea>-->
+<!--                    <br /><br />-->
+<!--                    <input type="submit" value="提交" />-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </article>-->
+<!--        <hr>-->
+<!--        <br>-->
+
+
+        <div class="conta" th:each="AuserComments : ${userComments} " >
+            <div class="me">
+                <img src="./b-img/th1.jpg" alt=""/>
+            </div>
+            <div class="me-title"th:text="${AuserComments.commenter}"></div>
+            <div class="me-body"th:text="${AuserComments.commentInfo}"></div>
+            <br>
+
+            <div class="return">
+                <a href="#p1">回复</a>
+            </div>
+            <br>
+       <hr>
+<!--            <div class="me-reply" id="p1">-->
+<!--               <form action="">-->
+<!--                   <label>写下你的回复</label>-->
+<!--                   <br>-->
+<!--                   <textarea style="resize:none;" id="s" name="story" rows="6" cols="122"placeholder="网络注意文明用语..."></textarea>-->
+<!--                   <br/>-->
+<!--                   <input type="submit" value="提交" />-->
+<!--               </form>-->
+<!--            </div>-->
+
+      </div>
+
+    </div>
+       <script src="https://cdn.bootcdn.net/ajax/libs/materialize/1.0.0-rc.2/js/materialize.js"></script>
+       <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <script th:src="@{./JS/ap.js}"></script>
+</body>
+
+</html>

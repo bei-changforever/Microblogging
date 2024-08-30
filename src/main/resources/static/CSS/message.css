@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    background-image: url("../updata_img/crescent-clouds-broken-fence-night-trees-fantasy-45922.jpeg");
+}
+
+.title {
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+}
+section {
+    margin: 200px auto;
+    width: 1000px;
+    height: auto;
+    /* background-color: pink; */
+
+    display: grid;
+    padding: 20px;
+    /* 定义网格布局中行与列之间间隙的尺寸 */
+    grid-gap: 20px;
+    /* 该属性规定网格布局中的列数和宽度 */
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    /* 设置网格中行的默认尺寸 */
+    grid-auto-rows: 270px;
+    /* 属性控制自动放置项目在网格中的插入方式为填充 */
+    grid-auto-flow: dense;
+}
+.iimg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+}
+.sspan {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    font: 100 14px 'Kristen ITC';
+    /* background-color: skyblue; */
+}
+.sspan a {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    font: 100 15px 'Kristen ITC';
+}
+section>div {
+    background-color: rgb(51,51,51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+header {
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+}
+header>div {
+    text-align: center;
+    line-height: 55px;
+    flex: 1;
+}
+.fl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+
+}
+.fl a {
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+.fl span {
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(to right,#14ffe9, #ffeb3b, pink,#14ffe9);
+    background-size: 400%;
+    border-radius: 25px;
+}
+.fl span:nth-of-type(1) {
+    width: 80px;
+    height: 40px;
+    display: block;
+    margin-right: 10px;
+
+}
+.fl span:nth-of-type(1) a {
+    font-size: 15px;
+}
+.fl span:nth-of-type(1) a:hover {
+    color: tomato;
+}
+@keyframes go {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+.fl span:hover {
+    animation: go 8s linear infinite;
+}
+.center {
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    color: blanchedalmond;
+    width: 200px;
+    height: 100%;
+
+}
+.fr {
+    display: flex;
+    width: 200px;
+    height: 100%;
+
+}
+.fr .tou {
+    width: 20%;
+    height: 100%;
+
+}
+.fr .tou img {
+    width: 55px;
+    height: 55px;
+}
+.fr .username {
+    display: flex;
+    width: 80%;
+    height: 100%;
+
+}
+.fr ul {
+    display: flex;
+}
+.fr ul li {
+    color: snow;
+    width: 80px;
+    height: 55px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#abc {
+    border-radius: 50%;
+}

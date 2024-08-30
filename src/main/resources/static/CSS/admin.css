@@ -1,0 +1,35 @@
+
+        .container {
+            width: 1000px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .table-bordered {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        .btn-info {
+            width: 52px;
+            height: 35px;
+            background-color: cyan;
+        }
+
+        .btn-danger {
+            width: 52px;
+            height: 35px;
+            background-color: darkred;
+            color: #fff;
+        }
+    

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园论坛</title>
+    <link rel="shortcut icon" th:href="@{/favicon.ico}">
+    <link rel="stylesheet" th:href="@{/CSS/base.css}">
+    <link rel="stylesheet" th:href="@{/CSS/input.css}">
+    <script type="text/javascript" th:src="@{/JS/img.js}"></script>
+
+</head>
+
+<body>
+    <div class="img"></div>
+    <div class="login">
+        <form th:action="@{/userAccount/save}" method="post" >
+            <div class="input_name">
+                <input type="text" required="required" id="name" name="username" >
+                <label for="name"></label>
+                <div class="underlinear"></div>
+            </div>
+            <div class="input_passwd">
+                <input type="password" required="required" id="pass" name="password" >
+                <label for="pass"></label>
+                <div class="underlinear"></div>
+            </div>
+            <div class="register">
+                <button type="submit" ><img  th:src="@{/images/submit.png}" alt="" id="myImage" title="登入"></button>
+            </div>
+            <div class="reset">
+                <input type="reset" value="" id="re">
+
+                <label for="re"></label>
+            </div>
+            <div class="main">
+                <span><a th:href="@{/toregister}">没有账号?<br>点击<img th:src="@{/images/register.png}" id="register" />前往注册</a></span>
+            </div>
+
+                <div class="rm"> <span><a th:href="@{/forget}">忘记密码?<br><img src="images/repasswd.png" id="repasswd" /> </a></span></div>
+
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

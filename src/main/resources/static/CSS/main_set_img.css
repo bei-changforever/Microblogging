@@ -1,0 +1,23 @@
+#one img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#two img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+article img {
+    width: 100%;
+    height: 100%;
+}
+.return {
+    vertical-align: bottom;
+}
+.return img {
+    width: 30px;
+    height: 30px;
+}

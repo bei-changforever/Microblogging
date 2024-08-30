@@ -1,0 +1,237 @@
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            overflow-x: hidden;
+        }
+        ul li {
+            list-style: none;
+        }
+        .background {
+            background-image: url("../images/fantasy-landscape-clouds-dry-tree-man-walking-fantasy-47031.jpeg");
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 200vh;
+            font: 900 15rem '';
+            line-height: 130vh;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            user-select: none;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            overflow-y: hidden;
+        }
+
+        .background::before {
+            content: '';
+            background-size: cover;
+            background-image: inherit;
+            background-position: 50% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -99;
+        }
+
+        h1 {
+            margin-top: 100px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            letter-spacing: 10px;
+            color: rgba(255, 255, 255, 0.9);
+            -webkit-text-stroke: #000 2px;
+            font: 600 90px '优设标题黑';
+            animation: go 2s ease-in-out infinite;
+        }
+
+        
+        .w {
+            width: 1600px;
+            /* height: 4000px; */
+            margin: 0 auto;
+            
+        }
+        a {
+            text-decoration: none;
+        }
+        .shortcut {
+        
+            position: absolute;
+            width: 100%;
+            height: 45px;
+            background-color: rgba(0, 0, 0, 0.3);
+            line-height: 31px;
+            z-index: 999;
+        }
+
+        .wl {
+            width: 300px;
+            float: left;
+            line-height: 15px;
+        }
+        .wl ul li{
+            width: 80px;
+            height: 42px;
+            float: left;
+            
+        }
+        .wl ul li img {
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 40px;
+        }
+        .wl ul li a {
+            font-size: 15px;
+            color: tan;
+        }
+        .wl ul li a:hover {
+            color: cornflowerblue;
+        }
+        .wr {
+            line-height: 15px;
+            float: right;
+        }
+        .wr ul li a {
+            color: tan;
+        }
+        .wr ul li a:hover  {
+            color: cornflowerblue;
+        }
+        .shortcut ul li {
+            margin-right: 10px;
+            float: left;
+            font-size: 12px;
+        }
+    
+        /*.shortcut .wr ul li:nth-child(even) {*/
+        /*width: 1px;*/
+        /*height: 12px;*/
+        /*background-color: #666;*/
+        /*margin: 2px 15px;*/
+        /*}*/
+        /*.arrow-icon::after {*/
+        /*    content: '';*/
+        /*    font-family: 'icomoon';*/
+        /*    margin-left: 6px;*/
+        /*}*/
+        @keyframes go {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .container {
+            position: absolute;
+            letter-spacing: 2px;
+            top: 100vh;
+            width: 60%;
+            /* color: #fff; */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 35px;
+            /* background-color: rgba(0, 0, 0, .3); */
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .card {
+            transform-style: preserve-3d;
+            min-height: 85vh;;
+            width: 35rem;
+            border-radius: 30px;
+            padding: 0rem 5rem;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+          }
+          .sneaker {
+            min-height: 35vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .sneaker img {
+            border-radius: 25px;
+            width: 20rem;
+            z-index: 2;
+            transition: all 0.75s ease-out;
+          }
+          .circle {
+            width: 15rem;
+            height: 15rem;
+            background: linear-gradient(
+              to right,
+              #8D775B,
+              rgba(0, 0, 0, 0.45)
+            );
+             position: absolute;
+             border-radius: 50%;
+             z-index: 1;
+}
+.info h3 {
+    font-size: 35px;
+    transition: all 0.75s ease-out;
+  }
+  .info h4 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #cffeff;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+  }
+  .name {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+  }
+  .name a {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #cffeff;
+  }
+  .name a:hover {
+    color: cyan;
+  }
+  a.active {
+    background: #585858;
+    color: white;
+  }
+  .purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+  }
+  .purchase {
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+  }
+  .purchase a {
+    color: #cffeff;
+  }
+  .purchase a:hover {
+    color: cyan;
+  }
+
+    

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账号注册页面</title>
+    <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+    <link rel="stylesheet" th:href="@{/CSS/wall_register.css}">
+</head>
+
+<body>
+    <div class="wall_register">
+        <img th:src="@{/images/register2.png}" alt="" class="top" />
+
+        <form th:action="@{/register/save}" th:object="${userAccount}" method="post">
+            <div class=" name">
+                <input type="text" th:field="*{username}" required="required" id="na" placeholder="账号:4~6位大小写英文字母及数字组合"
+                    pattern="^[a-zA-Z0-9]{3,5}$" />
+                <label for="na"><img th:src="@{/images/zhanhao.png}" alt="" class="he" /></label>
+                <div class="underlinear"></div>
+            </div>
+            <div class="pass">
+                <input type="password" th:field="*{password}" required="required" placeholder="密码:4~6位大小写英文字母及数字组合"
+                    pattern="^[a-zA-Z0-9]{3,5}$" id="sdf"/>
+                <label for="sdf"><img th:src="@{/images/scpass.png}" alt="" class="she" /></label>
+                <div class="underlinear"></div>
+            </div>
+            <div class="email">
+                <input type="email" th:filed="*{email}" name="email" required="required" id="email" placeholder="邮箱:填写你的邮箱">
+                <label for="email"><img th:src="@{/images/email.png}" alt="" class="her"></label>
+                <div class="underlinear"></div>
+            </div>
+            <div class="post">
+                <button type="submit" th:href="@{/security/login.html}" ><img th:src="@{/images/post.png}" alt="" title="gogogo提交然后出发啦"></button>
+            </div>
+        </form>
+
+        <div class="back">
+            <a th:href="@{/tologin}"><img th:src="@{/images/bg-back.png}" alt="想起来账号了?返回登入" title="想起来账号了?返回登入"></a>
+        </div>
+    </div>
+    <script>
+        alert("注册");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的关注</title>
+    <link rel="shortcut icon" th:href=" @{/favicon.ico}" />
+    <link rel="stylesheet" th:href="@{/CSS/attention.css}">
+</head>
+
+<body>
+    <div class="box">
+        <div class="fl">
+            <div class="fl-title">
+                <span>我的关注</span>
+                <img src="a-img/add.png" alt="">
+            </div>
+            <div class="nav-fl">
+                <ul>
+                    <li><img th:src="@{/a-img/group.png}" alt="" style="vertical-align: middle"><a href="#p1">全部关注</a></li>
+                    <li><img th:src="@{/a-img/特别关注.png}" alt="" style="vertical-align: middle"><a href="#p2">特别关注</a></li>
+                    <li><img th:src="@{/a-img/不让看.png}" alt="" style="vertical-align: middle"><a href="#p3">悄悄关注</a></li>
+                    <li><img th:src="@{/a-img/收藏.png}" alt="" style="vertical-align: middle"><a href="#p4">默认分组</a></li>
+                </ul>
+            </div>
+            <div class="fl-bottom">
+                <div class="fl-botom-title">
+                    <span>我的粉丝</span>
+                </div>
+                <div class="fl-bottom-bottom">
+                    <span><a href="#p5">我的粉丝</a></span>
+                </div>
+            </div>
+            <div class="return">
+                <a th:href="@{/toindexafter}">返回</a>
+            </div>
+        </div>
+        <div class="fr" id="p1">
+            <div class="fr-title">
+                <span>全部关注</span>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th1.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th2.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/OIP-C.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th4.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+        </div>
+        <div class="fr" id="p2">
+            <div class="fr-title">
+                <span>特别关注</span>
+
+                <span class="a">第一时间收到该分组下用户更新稿件的通知</span>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th1.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th2.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th3.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th4.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/OIP-C.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+        </div>
+        <div class="fr" id="p3">
+            <div class="fr-title">
+                <span>悄悄关注</span>
+
+                <span class="a">悄悄关注的用户不会收到你的关注信息</span>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th2.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th3.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th1.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th4.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+        </div>
+        <div class="fr" id="p4">
+            <div class="fr-title">
+                <span>默认分组</span>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th2.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th3.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th4.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/OIP-C.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th1.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+        </div>
+        <div class="fr" id="p5">
+            <div class="fr-title">
+                <span>我的粉丝</span>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/OIP-C.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th4.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th2.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th1.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+            <div class="fr-section">
+                <div class="th"><a href="#"><img src="b-img/th3.jpg" alt=""></a></div>
+
+                <div class="fr-name"><span>小CToxic</span></div>
+
+                <div class="fr-bottom"><span>有兴趣的话看看我的视频吧，求推荐，求分享，求关注，求收藏......</span></div>
+            </div>
+            <div class="underlinear"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

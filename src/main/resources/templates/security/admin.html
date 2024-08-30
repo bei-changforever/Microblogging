@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" th:href="@{./css/admin.css}">
+    <link rel="shortcut icon" th:href=" @{/favicon.ico}" />
+</head>
+
+<body>
+<div class="container">
+    <h1>用户目录</h1>
+    <hr>
+    <br>
+    <table class="table-bordered" border="1">
+        <thead class="thead-dark">
+        <tr>
+            <th>用户昵称</th>
+            <th>邮箱</th>
+            <th>管理</th>
+        </tr>
+        </thead>
+
+       <form th:action="@{/admin}" method="post">
+           <tbody>
+           <tr th:each="AuserAccount : ${userAccount}">
+               <td th:text="${AuserAccount.username}"></td>
+               <td th:text="${AuserAccount.email}"></td>
+               <td>
+                   <a href="" class="btn-info">更新</a>
+                   <a th:href="@{'/userCRUD/' + ${AuserAccount.userId}}" class="btn-danger" onclick="if (!(confirm('你确定去删除这个用户吗'))) return false">删除</a>
+               </td>
+           </tr>
+           </tbody>
+       </form>
+    </table>
+</div>
+
+</body>
+
+</html>

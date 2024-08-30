@@ -1,0 +1,271 @@
+/* * {
+    transform-style: preserve-3d;
+} */
+.input_name {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    /* background-color: pink; */
+}
+.input_name input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    text-indent: 2em;
+}
+.input_name label{
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/name.jpg);
+    background-size: 50px 50px ;
+    cursor: pointer;
+    transition: .4s;
+}
+.input_name .underlinear {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(90deg, #82D0D2, #AE9A9C, #538AA9, #82D0D2);
+	background-size: 400%;
+    z-index: 1;
+}
+@keyframes animate{
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400%;
+	}
+}
+
+.input_name input:focus~label,
+.input_name input:valid~label {
+    transform: translateY(-40px);
+    background-image: url(../images/name2.png);
+}
+.input_name:hover .underlinear {
+    animation: animate 8s linear infinite;
+}
+.input_passwd {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background-color: pink; */
+    margin-top: 50px;
+}
+.input_passwd input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 25px;
+    text-indent: 2em;
+    background-color: transparent;
+}
+.input_passwd label {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    background-image: url(../images/密码.png);
+    background-size: 50px 50px;
+    transition: .4s;
+    cursor: pointer;
+}
+.input_passwd input:focus~label,
+.input_passwd input:valid~label {
+    transform: translateY(-40px);
+    background-image: url(../images/密.png);
+}
+.input_passwd .underlinear {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(90deg, #82D0D2, #AE9A9C, #538AA9, #82D0D2);
+	background-size: 400%;
+    z-index: 1;
+}
+.input_passwd:hover .underlinear {
+    animation: animate 8s linear infinite;
+}
+.register {
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    /* background-color: pink; */
+}
+.register button {
+    margin-left: 250px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, #82D0D2, #AE9A9C, #538AA9, #82D0D2);
+    background-size: 400%;
+    cursor: pointer;
+}
+.register button img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    transition: all .4s linear;
+}
+button:hover img {
+    content: url(../images/submitt.png);
+    width: 50px;
+    height: 50px;
+    
+}
+/* button:focus~img,
+button:valid~img {
+    content: url(../images/submittt.png);
+} */
+button:hover {
+    animation: animate 8s linear infinite;
+}
+button::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-size: 400%;
+    z-index: -1;
+    border-radius: 40px;
+    opacity: 0;
+	transition: 0.5s;
+    background: linear-gradient(90deg, #82D0D2, #AE9A9C, #538AA9, #82D0D2);
+}
+button:hover::before {
+    animation: animate 8s linear infinite;
+    filter: blur(15px);
+    opacity: 1;
+}
+.reset {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+}
+.reset::before {
+    content: '';
+    background-image: url(../images/莲雾.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.reset:hover::before {
+    animation: xuanzhuan 8s linear infinite;
+}
+.reset input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    background-size: 400%;
+    cursor: pointer;
+}
+
+@keyframes xuanzhuan {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.main {
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: #ece5ce;
+    border-radius: 10px;
+    animation: move 5s ease-in-out infinite;
+    box-shadow: 10px 10px #83af9b;
+    cursor: pointer;
+    transition: .5s;
+}
+.main:hover {
+    background-color: #83af9b;
+    box-shadow: 10px 10px #ece5ce;
+}
+.main span a {
+    color: #774f38;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+}
+.rm {
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    right: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: #83af9b;
+    border-radius: 10px;
+    animation: move 5s ease-in-out infinite;
+    box-shadow: 10px 10px #ece5ce;
+    cursor: pointer;
+    transition: .5s;
+}
+.rm:hover {
+    background-color: #ece5ce;
+    box-shadow: 10px 10px #83af9b;
+}
+.rm span a {
+    color: #774f38;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+}
+#register {
+    vertical-align: bottom;
+    width: 30px;
+    height: 30px;
+}
+#repasswd {
+    width: 30px;
+    height: 30px;
+}
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+

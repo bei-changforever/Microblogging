@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+    background-color: #0E70B0;
+    overflow-y: hidden;
+}
+header {
+    margin: 30px auto;
+    width: 1000px;
+    height: 100px;
+    /* background-color: pink; */
+    text-align: center;
+    line-height: 100px;
+}
+header p {
+    font-size: 40px;
+}
+.head_title {
+    margin: 0 auto;
+    width: 1000px;
+    height: 30px;
+    /* background-color: skyblue; */
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+}
+.head_title span {
+    flex: 1;
+    color: brown;
+}
+.section {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1000px;
+    height: 30px;
+    border: 3px solid #83af9b;
+    border-radius: 25px;
+}
+.section img {
+    transform: translateX(95px);
+    height: 30px;
+    width: 50px;
+}
+button {
+    width: 100px;
+    height: 100px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 600px;
+    height: 500px;
+    border-radius: 25px;
+    /* background-color: pink; */
+    /* border: 1px solid black; */
+    background-image: url(../images/sea.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.name {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    /* background-color: powderblue; */
+}
+.name input {
+    width: 100%;
+    border: none;
+    height: 100%;
+    font-size: 20px;
+    text-indent: 3em;
+    background-color: transparent;
+}
+.name label {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 20px;
+    transition: .4s;
+}
+.name input:focus~label,
+.name input:valid~label {
+    color: purple;
+    font-size: 29px;
+    text-shadow: 5px 5px 5px gray;
+    transform: translateY(-40px);
+}
+.name .underlinear {
+    width: 100%;
+    height: 3px;
+    background-color: silver;
+}
+.name .underlinear::before {
+    position: absolute;
+    bottom: -2.6px;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: purple;
+    transform: scale(0);
+    transition: .4s;
+}
+.name input:focus~.underlinear::before,
+.name input:valid~.underlinear::before {
+    transform: scale(1);
+}
+.pass {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    /* background-color: powderblue; */
+}
+.pass input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    height: 100%;
+    font-size: 20px;
+    text-indent: 5.6em;
+}
+.pass label {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    font-size: 20px;
+    transition: .4s;
+}
+.pass input:focus~label,
+.pass input:valid~label {
+    color: purple;
+    font-size: 29px;
+    text-shadow: 5px 5px 5px gray;
+    transform: translateY(-40px);
+}
+.pass .underlinear {
+    width: 100%;
+    height: 3px;
+    background-color: silver;
+}
+.pass .underlinear::before {
+    position: absolute;
+    bottom: -2.6px;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: purple;
+    transform: scale(0);
+    transition: .4s;
+}
+.pass input:focus~.underlinear::before,
+.pass input:valid~.underlinear::before {
+    transform: scale(1);
+}
+#sub{
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    background-image: url(../images/fish.png);
+    background-size: 70px 60px;
+    background-repeat: no-repeat;
+    animation: go 4s ease-in-out infinite;
+}
+@keyframes go {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

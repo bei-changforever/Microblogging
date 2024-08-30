@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>棉花糖社区</title>
+    <link rel="stylesheet" th:href="@{/CSS/mian.css}">
+    <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+    <link rel="stylesheet" th:href="@{/CSS/main_set_img.css}">
+</head>
+
+<body>
+    <section>
+        <div class="a">
+            <form action="">
+                <input type="text" class="b" placeholder="搜索">
+                <a href="#" class="c">
+                    <img th:src="@{/img/search.png}" style="width: 30px;">
+                </a>
+            </form>
+        </div>
+        <ul class="shell">
+            <li class="button">
+                <span><img th:src="@{/img/24gf-folderOpen.png}" alt="" class="folderOpen">收藏</span>
+                <ul>
+                    <li><a href="#">默认收藏夹</a></li>
+                    <li><a href="#">新建收藏夹</a></li>
+                </ul>
+            </li>
+            <li class="button">
+                <span><img th:src="@{img/contribute.png}" alt="" class="contribute"><a th:href="@{/topush}">投稿</a></span>
+                <ul>
+                    <li><a href="#">专栏投稿</a></li>
+                    <li><a href="#">音频投稿</a></li>
+                    <li><a href="#">插画投稿</a></li>
+                    <li><a href="#">视频投稿</a></li>
+                    <li><a href="#">投稿管理</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="return"> <img src="img/reutrn.png" alt=""><a th:href="@{/toindexafter}">返回热门页</a></div>
+    </section>
+    <nav>
+        <ul class="categorylist">
+            <li class="li">
+                壁纸&插画
+                <ul>
+                    <li><a href="#">动漫</a></li>
+                    <li><a href="#">幻想</a></li>
+                    <li><a href="#">动物</a></li>
+                    <li><a href="#">食物</a></li>
+                    <li><a href="#">生活</a></li>
+                </ul>
+            </li>
+            <li class="li">
+                电视剧&电影
+                <ul>
+                    <li><a href="#">内地电视剧&电影</a></li>
+                    <li><a href="#">日本电视剧&电影</a></li>
+                    <li><a href="#">欧美电视剧&电影</a></li>
+                </ul>
+            </li>
+            <li class="li">
+                小说
+                <ul>
+                    <li><a href="#">奇幻</a></li>
+                    <li><a href="#">灵异</a></li>
+                    <li><a href="#">悬疑</a></li>
+                </ul>
+            </li>
+            <li class="li">
+                人文自然
+                <ul>
+                    <li><a href="#">艺术</a></li>
+                    <li><a href="#">历史</a></li>
+                    <li><a href="#">自然</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <div class="tall" id="one"th:each=" Amany : ${many}">
+            <div class="iimg"> <img th:src="@{'/array/' + ${Amany.jpeg} }" alt="">
+            </div>
+
+            <div class="sspan"><a th:href="@{/tocomment}">
+               测试测试测试测试测试测试测试测试测试测试
+
+            </a></div>
+        </div>
+        <div id="two">
+            <div class="iimg"><img th:src="@{/updata_img/pretty-anime-girl-brown-hair-scarf-winter-anime-46748.jpeg}" alt="">
+            </div>
+
+            <div class="sspan"><a th:href="@{/tocomment}">测试测试测试测试测试测试测试测试测试测试测试测试</a></div>
+            </a>
+        </div>
+
+    </article>
+</body>
+
+</html>

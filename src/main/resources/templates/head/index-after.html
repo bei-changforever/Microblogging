@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>棉花糖</title>
+    <link rel="stylesheet" th:href="@{/CSS/glxy.css}">
+    <link rel="stylesheet" th:href="@{/CSS/index.css}" />
+    <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+   <form action="" method="get">
+       <section class="shortcut">
+           <div class="w">
+               <div class="wl">
+                   <ul>
+                       <li><a th:href="@{/tousermessage}"><img src="b-img/th2.jpg" alt=""style="border-radius: 50%"></a></li>
+                       <li>
+                           <a th:href="@{/tousermessage}">个人信息</a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="wr">
+                   <ul>
+
+                       <li><a th:href="@{/mymessage}">我的消息</a></li>
+                       <li></li>
+                       <li class="arrow-icon"><a th:href="@{/attention}" >我的关注</a></li>
+                       <li></li>
+                       <li><a th:href="@{/logout}">退出登入</a></li>
+                       <li></li>
+                   </ul>
+               </div>
+           </div>
+       </section>
+       <h1>Slide down<br />︾</h1>
+       <div class="background"><span>Today Hot</span></div>
+       <div class="container">
+           <div class="card">
+               <div class="sneaker">
+                   <div class="circle"></div>
+                   <img th:src="@{/img/fantasy-girl-back.jpeg}" alt="wallpapermaiden.com" />
+               </div>
+               <div class="info">
+                   <h3 class="title">Fantasy</h3>
+                   <h4>
+                       城堡， 绘画， 艺术品， 灰发.....
+                   </h4>
+                   <div class="name">
+                       <a href="#">wallpapermaiden</a>
+                   </div>
+                   <div class="purchase">
+                       <a th:href="@{/tomany}">查看更多</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </form>
+
+    <script>
+        const background = document.querySelector(".background")
+
+        document.addEventListener('scroll', () => {
+            const scrollY = window.scrollY
+
+            if (scrollY !== 0) {
+                background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+            } else {
+                background.style.backgroundPosition = ''
+            }
+        })
+    </script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
